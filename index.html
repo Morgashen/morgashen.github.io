@@ -1,20 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-  </nav>
-
-  <main>
-    {{ content }}
-  </main>
-
-  <footer>
-    &copy; {{ site.time | date: '%Y' }} {{ site.title }}
-  </footer>
+    <header>
+        <div class="container">
+            <h1>Maze Project</h1>
+            <p>Explore the algorithmic wonderland of our maze generation and solving project.</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h2>About the Project</h2>
+                <p>The Maze Project is a fascinating journey into the world of algorithms. Our project demonstrates various maze generation techniques and their corresponding solving algorithms. Dive in to see how it all works!</p>
+            </section>
+            <section class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Random Maze Generation</li>
+                    <li>Depth-First Search (DFS) Solver</li>
+                    <li>Breadth-First Search (BFS) Solver</li>
+                    <li>Visual Path Highlighting</li>
+                    <li>Interactive Maze Editing</li>
+                </ul>
+            </section>
+            <section class="screenshots">
+                <h2>Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="assets/images/screenshot1.png" alt="Maze Generation Screenshot">
+                    <img src="assets/images/screenshot2.png" alt="Maze Solving Screenshot">
+                </div>
+            </section>
+            <section class="repository">
+                <h2>Get the Code</h2>
+                <p>Visit our <a href="https://github.com/morgashen/maze-project" target="_blank">GitHub repository</a> to see the source code, contribute, and report issues.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Maze Project. Created by Your Name.</p>
+        </div>
+    </footer>
 </body>
 </html>
