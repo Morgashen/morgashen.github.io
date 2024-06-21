@@ -1,133 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maze Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
-            color: #333;
-        }
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
 
-        header {
-            background: #333;
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-            color: #feb47b;
-        }
+/* Header styles */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 2rem 0;
+    text-align: center;
+}
 
-        header p {
-            font-size: 1.2rem;
-            color: #ff7e5f;
-        }
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
 
-        main {
-            padding: 2rem 0;
-        }
+header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
 
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #ff7e5f;
-            padding-bottom: 0.5rem;
-        }
+/* Main content styles */
+main {
+    padding: 3rem 0;
+}
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+section {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
 
-        ul li {
-            background: #ff7e5f;
-            color: #fff;
-            margin: 0.5rem 0;
-            padding: 0.5rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
 
-        .screenshot-gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
+/* Features list styles */
+.features ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
 
-        .screenshot-gallery img {
-            max-width: 45%;
-            margin: 0.5rem;
-            border: 3px solid #fff;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+.features li {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
 
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Maze Project</h1>
-            <p>Explore the algorithmic wonderland of our maze generation and solving project.</p>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <section class="intro">
-                <h2>About the Project</h2>
-                <p>The Maze Project is a fascinating journey into the world of algorithms. Our project demonstrates various maze generation techniques and their corresponding solving algorithms. Dive in to see how it all works!</p>
-            </section>
-            <section class="features">
-                <h2>Features</h2>
-                <ul>
-                    <li>Random Maze Generation</li>
-                    <li>Depth-First Search (DFS) Solver</li>
-                    <li>Breadth-First Search (BFS) Solver</li>
-                    <li>Visual Path Highlighting</li>
-                    <li>Interactive Maze Editing</li>
-                </ul>
-            </section>
-            <section class="screenshots">
-                <h2>Screenshots</h2>
-                <div class="screenshot-gallery">
-                    <img src="assets/images/screenshot1.png" alt="Maze Generation Screenshot">
-                    <img src="assets/images/screenshot2.png" alt="Maze Solving Screenshot">
-                </div>
-            </section>
-            <section class="repository">
-                <h2>Get the Code</h2>
-                <p>Visit our <a href="https://github.com/username/maze-project" target="_blank">GitHub repository</a> to see the source code, contribute, and report issues.</p>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Maze Project. Created by Your Name.</p>
-        </div>
-    </footer>
-</body>
-</html>
+.features li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Screenshot gallery styles */
+.screenshot-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.screenshot-gallery img {
+    width: 48%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Repository link styles */
+.repository a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.repository a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .screenshot-gallery img {
+        width: 100%;
+    }
+}
