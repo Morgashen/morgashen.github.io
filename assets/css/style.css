@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: #f4f4f4;
     color: #333;
 }
 
@@ -16,29 +16,25 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
-    color: #feb47b;
 }
 
 header p {
     font-size: 1.2rem;
-    color: #ff7e5f;
 }
 
 main {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 h2 {
     color: #333;
-    border-bottom: 2px solid #ff7e5f;
+    border-bottom: 2px solid #333;
     padding-bottom: 0.5rem;
 }
 
@@ -48,12 +44,9 @@ ul {
 }
 
 ul li {
-    background: #ff7e5f;
-    color: #fff;
+    background: #e2e2e2;
     margin: 0.5rem 0;
     padding: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .screenshot-gallery {
@@ -65,9 +58,7 @@ ul li {
 .screenshot-gallery img {
     max-width: 45%;
     margin: 0.5rem;
-    border: 3px solid #fff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
 }
 
 footer {
