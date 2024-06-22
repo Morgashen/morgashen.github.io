@@ -27,6 +27,45 @@ header {
     text-align: center;
 }
 
+/* Header styles */
+header {
+    background-image: url(<a href="https://www.pikpng.com/pngvi/iThxoiw_maze-lost-confusing-puzzle-png-image-black-and/" target="_blank">Maze Lost Confusing Puzzle Png Image - Black And White Greek Rug Clipart @pikpng.com</a>);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ecf0f1;
+    padding: 4rem 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Add this to create an overlay for better text readability */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(44, 62, 80, 0.7); /* Adjust the last value (0.7) for transparency */
+    z-index: 1;
+}
+
+/* Ensure the text is above the overlay */
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
