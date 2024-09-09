@@ -1,12 +1,14 @@
-/* Maze-like background */
+/* General body styling */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Arial', sans-serif;
     background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
     color: white;
+    font-size: 16px;
 }
 
+/* Header styling */
 header {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
@@ -15,20 +17,22 @@ header {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     color: #ffcc00;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
+/* Container styling */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Main content styling */
 main {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
@@ -39,8 +43,10 @@ main {
 
 h2 {
     color: #ffcc00;
+    font-size: 1.8em;
 }
 
+/* List styling */
 ul {
     list-style-type: none;
     padding: 0;
@@ -52,6 +58,7 @@ ul li {
     color: white;
 }
 
+/* Screenshot gallery */
 .screenshot-gallery {
     display: flex;
     justify-content: space-around;
@@ -64,6 +71,7 @@ ul li {
     border-radius: 10px;
 }
 
+/* Link styling */
 a {
     color: #ffcc00;
     text-decoration: none;
@@ -73,6 +81,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Footer styling */
 footer {
     background-color: rgba(0, 0, 0, 0.9);
     text-align: center;
